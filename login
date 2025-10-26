@@ -34,7 +34,7 @@ public class LoginTest {
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.cssSelector("input[type='submit']")).click();
 
-        // Проверка успешного входа
+        
         String pageTitle = driver.getTitle();
         Assert.assertTrue(pageTitle.contains("Swag Labs"), "Не удалось войти в систему.");
     }
